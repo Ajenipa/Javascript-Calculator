@@ -1,5 +1,70 @@
+:root{
+    --universal-color:rgb(55, 55, 107)
+}
 body{
     margin:0;
-    padding:0;
-    background:blue;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    align-items: center;
+}
+.top-section{
+    margin-left: 333px;
+}
+.header{
+    background: var(--universal-color);
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 40px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box{
+    margin: 50px 70px;
+    width:550px;
+    height: 150px;
+    border:2px solid var(--universal-color);;
+    border-radius: 15px;
+    .inner{
+        border:2px solid var(--universal-color);;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 200px;
+        
+    }
+    .btn-list{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 120px;
+        list-style: none;
+        align-items: center;
+        li{
+            margin: 5px 5px;
+            .button{
+                background: var(--universal-color);;
+                color: white;
+                border: none;
+                width: 57px;
+                height: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bottom-section{
+    border:1px solid var(--universal-color);
+    border-radius: 20px;
+    width:550px;
+    height: 150px;
+    margin-left: 70px;
+    text-align: center;
+    .result{
+        font-weight: 900;
+        color:var(--universal-color);
+    }
 }
