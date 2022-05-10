@@ -12,22 +12,23 @@
     <header class="header">The Unconventional Calculator</header>
     <div class="top-section">
     <section class="box">
-    <div class="inner">""</div>
+    <textarea type="id" id="user-input"></textarea>
     <ul class="btn-list">
-        <li><input type="button" class="button" value="+"></li>
-        <li><input type="button" class="button" value="-"></li>
-        <li><input type="button" class="button" value="x"></li>
-        <li><input type="button" class="button" value="/"></li>
+        <li><input type="button" id="add-button" class="button" value="+"></li>
+        <li><input type="button" id="subtraction-button" class="button" value="-"></li>
+        <li><input type="button" id="multiplication-button" class="button" value="x"></li>
+        <li><input type="button" id="division-button"class="button" value="/"></li>
     </ul>
     </section>
     <section class="bottom-section">
-        <p class="result">0</p>
-        <p class="result">Result: 0</p>
+        <p  class="result"><span id="current-calculation">0+0</span></p>
+        <p  class="result">Result:<span id="current-result">0</span></p>
         
     </section>
     
     </div>
     </div>
-   
+<script src="./dom.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
